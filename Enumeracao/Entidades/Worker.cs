@@ -6,5 +6,6 @@ namespace Enumeracao.Entidades
 {
     class Worker
     {
+        public Departamento MyProperty { get; set; }
     }
 }

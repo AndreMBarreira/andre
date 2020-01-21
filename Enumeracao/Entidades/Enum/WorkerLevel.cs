@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Enumeracao.Entidades.Enum
+﻿namespace Enumeracao.Entidades.Enum
 {
     enum WorkerLevel : int
     {

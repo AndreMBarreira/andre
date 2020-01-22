@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Enumeracao.Entidades.Enum;
-using System.Collections.Generic;
 
 namespace Enumeracao.Entidades
 {

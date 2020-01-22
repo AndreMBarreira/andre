@@ -21,7 +21,7 @@ namespace Enumeracao.Entidades
 
         public double Total()
         {
-            return (double) ValorHora * Quantidade;
+            return ValorHora * Quantidade;
         }
 
     }

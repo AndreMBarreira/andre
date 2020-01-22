@@ -12,7 +12,7 @@ namespace Enumeracao.Entidades
         public string Nome { get; set; }
         public WorkerLevel Level { get; set; }
         public double SalarioBase { get; set; }
-        public List<Contratos> Contrato { get; set; }
+        public List<Contratos> Contrato { get; set; } = new List<Contratos>();
 
         public Worker()
         {
@@ -39,11 +39,11 @@ namespace Enumeracao.Entidades
         public double TotaldeSalario(int ano, int mes)
         {
             double sum = SalarioBase;
-            foreach (Contratos contrat in Contrato)
+            foreach (Contratos contrato in Contrato)
             {
-                if (contrat.Data.Year == ano && contrat.Data.Month == mes)
+                if (contrato.Data.Year == ano && contrato.Data.Month == mes)
                 {
-                    sum += contrat.Total();
+                    sum += contrato.Total();
                 }
             }
             return sum;
